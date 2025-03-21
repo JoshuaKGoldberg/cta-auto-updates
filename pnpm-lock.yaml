@@ -816,6 +816,10 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
+  all-properties-lazy@0.1.0:
+    resolution: {integrity: sha512-Ab9UQDstwhrTcsRP1m4QkT6W1PRMBoAnPJeB5LZcuum/nLiFMlSwYxH1J8fsRAolaXez0ijgbm6BAWZkQC9DVg==}
+    engines: {node: '>=18.3.0'}
+
   ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
     engines: {node: '>=6'}
@@ -892,8 +896,8 @@ packages:
     resolution: {integrity: sha512-DZJ/OGQtGeiw9neP6pDFXOBiuGO0vr1Nqlm70WJs3NfziozE1OeFLe8E4ol5t1sIfH8AAheM4Z/YnU2ftroWzw==}
     engines: {node: '>=18'}
 
-  bingo@0.5.8:
-    resolution: {integrity: sha512-R9klG+JeU/OsbP2TKRLVKJGH9g5VkY5MzflPQvwFUCRgoqSeDFPx78JOfk8URek5X3nPsonNtOdKt1sGs6vRhQ==}
+  bingo@0.5.9:
+    resolution: {integrity: sha512-vkzB007e13ZvCfuK/XEM5d1v2pqrPnvEsWBSMZgtGRFnMvM/M/Z/LRRxfgDoTvcb6dcjYUYcUkiCOripayOiBw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2961,6 +2965,10 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
+  all-properties-lazy@0.1.0:
+    dependencies:
+      without-undefined-properties: 0.1.1
+
   ansi-colors@4.1.3: {}
 
   ansi-escapes@7.0.0:
@@ -3004,9 +3012,9 @@ snapshots:
     dependencies:
       '@octokit/types': 13.10.0
 
-  bingo-stratum@0.5.5(bingo-fs@0.5.4)(bingo-systems@0.5.4)(bingo@0.5.8)(zod@3.24.2):
+  bingo-stratum@0.5.5(bingo-fs@0.5.4)(bingo-systems@0.5.4)(bingo@0.5.9)(zod@3.24.2):
     dependencies:
-      bingo: 0.5.8
+      bingo: 0.5.9
       bingo-fs: 0.5.4
       bingo-systems: 0.5.4
       chalk: 5.4.1
@@ -3023,9 +3031,10 @@ snapshots:
       get-github-auth-token: 0.1.1
       octokit: 4.1.2
 
-  bingo@0.5.8:
+  bingo@0.5.9:
     dependencies:
       '@clack/prompts': 0.10.0
+      all-properties-lazy: 0.1.0
       bingo-fs: 0.5.4
       bingo-requests: 0.5.4
       bingo-systems: 0.5.4
@@ -3181,18 +3190,18 @@ snapshots:
 
   create-typescript-app@2.7.2(bingo-systems@0.5.4):
     dependencies:
-      bingo: 0.5.8
+      bingo: 0.5.9
       bingo-fs: 0.5.4
-      bingo-stratum: 0.5.5(bingo-fs@0.5.4)(bingo-systems@0.5.4)(bingo@0.5.8)(zod@3.24.2)
+      bingo-stratum: 0.5.5(bingo-fs@0.5.4)(bingo-systems@0.5.4)(bingo@0.5.9)(zod@3.24.2)
       cspell-populate-words: 0.3.0
       execa: 9.5.2
       git-url-parse: 16.0.1
       github-default-labels: 0.1.0
       html-to-text: 9.0.5
       image-size: 1.2.0
-      input-from-file: 0.5.4(bingo@0.5.8)
-      input-from-file-json: 0.5.4(bingo@0.5.8)(zod@3.24.2)
-      input-from-script: 0.5.4(bingo@0.5.8)
+      input-from-file: 0.5.4(bingo@0.5.9)
+      input-from-file-json: 0.5.4(bingo@0.5.9)(zod@3.24.2)
+      input-from-script: 0.5.4(bingo@0.5.9)
       js-yaml: 4.1.0
       lazy-value: 3.0.0
       lodash: 4.17.21
@@ -3693,20 +3702,20 @@ snapshots:
 
   ini@4.1.1: {}
 
-  input-from-file-json@0.5.4(bingo@0.5.8)(zod@3.24.2):
+  input-from-file-json@0.5.4(bingo@0.5.9)(zod@3.24.2):
     dependencies:
-      bingo: 0.5.8
-      input-from-file: 0.5.4(bingo@0.5.8)
+      bingo: 0.5.9
+      input-from-file: 0.5.4(bingo@0.5.9)
       zod: 3.24.2
 
-  input-from-file@0.5.4(bingo@0.5.8):
+  input-from-file@0.5.4(bingo@0.5.9):
     dependencies:
-      bingo: 0.5.8
+      bingo: 0.5.9
       zod: 3.24.2
 
-  input-from-script@0.5.4(bingo@0.5.8):
+  input-from-script@0.5.4(bingo@0.5.9):
     dependencies:
-      bingo: 0.5.8
+      bingo: 0.5.9
       zod: 3.24.2
 
   is-binary-path@2.1.0:
