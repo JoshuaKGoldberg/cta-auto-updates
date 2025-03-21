@@ -22,12 +22,12 @@ jobs:
           commit_user_name: "The Friendly Bingo Bot"
       - uses: mshick/add-pr-comment@v2
         with:
-          GITHUB_TOKEN: "${{ secrets.ACCESS_TOKEN }}"
           issue: ${{ github.event.pull_request.number }}
           message: |
             🤖 Beep boop! I ran `npx create-typescript-app` and found same changes.
             Please review the latest commit to see if you want to merge it.
             Cheers! 💝
+          repo-token: "${{ secrets.ACCESS_TOKEN }}"
 
 name: CTA Renovate
 
