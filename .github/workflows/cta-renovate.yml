@@ -1,5 +1,5 @@
 jobs:
-  transition_cta:
+  cta_transition:
     if: startsWith(github.head_ref, 'renovate/')
     name: CTA Renovate
     runs-on: ubuntu-latest
