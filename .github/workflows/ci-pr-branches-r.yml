@@ -7,9 +7,10 @@ jobs:
       - uses: ./.github/actions/prepare
       - run: pnpm format --list-different
 
-name: CI Branches Renovate
+name: CI Branches All
 
 on:
   pull_request:
     branches:
-      - "renovate/**"
+      - "r*"
+      - "r**"
