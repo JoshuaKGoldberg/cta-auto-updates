@@ -27,6 +27,8 @@ greet("Hello, world! 💖");
 See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then [`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md).
 Thanks! 💖
 
+1. Test
+
 <!-- You can remove this notice if you don't want it 🙂 no worries! -->
 
 > 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo engine](https://create.bingo).
