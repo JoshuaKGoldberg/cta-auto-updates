@@ -14,7 +14,11 @@ jobs:
       - run: npx create-typescript-app
       - run: git status
       - run: git diff HEAD
-      - uses: EndBug/add-and-commit@v9
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Check in changes from re-running npx create-typescript-app"
+          commit_user_email: "bot@create.bingo"
+          commit_user_name: "The Friendly Bingo Bot"
 
 name: CTA Renovate
 
