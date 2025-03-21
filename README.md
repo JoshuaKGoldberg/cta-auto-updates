@@ -12,6 +12,8 @@
 
 ## Usage
 
+1. Josh 2
+
 ```shell
 npm i cta-auto-updates
 ```
