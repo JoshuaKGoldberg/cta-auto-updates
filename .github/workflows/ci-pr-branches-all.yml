@@ -7,10 +7,12 @@ jobs:
       - uses: ./.github/actions/prepare
       - run: pnpm format --list-different
 
-name: CI
+name: CI Branches All
 
 on:
-  pull_request: ~
+  pull_request:
+    branches:
+      - '*'
   push:
     branches:
       - main
