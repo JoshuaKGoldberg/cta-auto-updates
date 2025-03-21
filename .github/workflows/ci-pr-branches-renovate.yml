@@ -12,7 +12,7 @@ name: CI Branches Renovate
 on:
   pull_request:
     branches:
-      - 'renovate/*'
+      - "renovate/**"
   push:
     branches:
       - main

@@ -12,7 +12,7 @@ name: CI Branches All
 on:
   pull_request:
     branches:
-      - '*'
+      - "*"
   push:
     branches:
       - main
