@@ -18,8 +18,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0
       create-typescript-app:
-        specifier: ^2.6.0
-        version: 2.7.2(bingo-systems@0.5.4)
+        specifier: 2.7.0
+        version: 2.7.0(bingo-systems@0.5.4)
       eslint:
         specifier: 9.22.0
         version: 9.22.0
@@ -1025,8 +1025,8 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  create-typescript-app@2.7.2:
-    resolution: {integrity: sha512-qYgu43P+xmIL5hv4IlOqy7M72VVZlQR5/pfHkD8tmT+NcEtgXjuQzAZHV2oNufA5Mc4qm0FYXmtrUI05mSnyXA==}
+  create-typescript-app@2.7.0:
+    resolution: {integrity: sha512-aa3XKxxLXU1zx+eHmlPFQZzitdgBDzt4PKxc0pw/Kuta0B7KkUk2Bps+IwzXicNuh/gQ9po4JNtyqk4g6o4GUw==}
     engines: {node: '>=18.3.0'}
     hasBin: true
 
@@ -1343,11 +1343,18 @@ packages:
   git-hooks-list@3.2.0:
     resolution: {integrity: sha512-ZHG9a1gEhUMX1TvGrLdyWb9kDopCBbTnI8z4JgRMYxsijWipgjSEYoPWqBuIB0DnRnvqlQSEeVmzpeuPm7NdFQ==}
 
+  git-remote-origin-url@4.0.0:
+    resolution: {integrity: sha512-EAxDksNdjuWgmVW9pVvA9jQDi/dmTaiDONktIy7qiRRhBZUI4FQK1YvBvteuTSX24aNKg9lfgxNYJEeeSXe6DA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   git-up@8.0.1:
     resolution: {integrity: sha512-2XFu1uNZMSjkyetaF+8rqn6P0XqpMq/C+2ycjI6YwrIKcszZ5/WR4UubxjN0lILOKqLkLaHDaCr2B6fP1cke6g==}
 
   git-url-parse@16.0.1:
     resolution: {integrity: sha512-mcD36GrhAzX5JVOsIO52qNpgRyFzYWRbU1VSRFCvJt1IJvqfvH427wWw/CFqkWvjVPtdG5VTx4MKUeC5GeFPDQ==}
+
+  gitconfiglocal@2.1.0:
+    resolution: {integrity: sha512-qoerOEliJn3z+Zyn1HW2F6eoYJqKwS6MgC9cztTLUB/xLWX8gD/6T60pKn4+t/d6tP7JlybI7Z3z+I572CR/Vg==}
 
   github-default-labels@0.1.0:
     resolution: {integrity: sha512-vFpUWrpPKKrtL8AA9RPdsS6JDfQW+YjlVUhYvb8/et8wZUHC+L6OsJ+A8TyaqzT86wvbZxnDkw/BNGJzoz47cQ==}
@@ -1446,6 +1453,9 @@ packages:
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+
+  ini@1.3.8:
+    resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
   ini@4.1.1:
     resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
@@ -2231,10 +2241,6 @@ packages:
   yoctocolors@2.1.1:
     resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
-
-  zod-package-json@1.1.0:
-    resolution: {integrity: sha512-RvEsa3W/NCqEBMtnoE09GRVelA3IqRcKaijEiM6CEGsD19qLurf0HjrYMHwOqImOszlLL0ja63DPJeeU4pm7oQ==}
-    engines: {node: '>=20'}
 
   zod@3.24.2:
     resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
@@ -3179,13 +3185,14 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  create-typescript-app@2.7.2(bingo-systems@0.5.4):
+  create-typescript-app@2.7.0(bingo-systems@0.5.4):
     dependencies:
       bingo: 0.5.8
       bingo-fs: 0.5.4
       bingo-stratum: 0.5.5(bingo-fs@0.5.4)(bingo-systems@0.5.4)(bingo@0.5.8)(zod@3.24.2)
       cspell-populate-words: 0.3.0
       execa: 9.5.2
+      git-remote-origin-url: 4.0.0
       git-url-parse: 16.0.1
       github-default-labels: 0.1.0
       html-to-text: 9.0.5
@@ -3203,11 +3210,9 @@ snapshots:
       remove-dependencies: 0.1.0
       remove-undefined-objects: 6.0.0
       set-github-repository-labels: 0.2.0
-      sort-keys: 5.1.0
       sort-package-json: 3.0.0
       title-case: 4.3.2
       zod: 3.24.2
-      zod-package-json: 1.1.0
     transitivePeerDependencies:
       - bingo-systems
 
@@ -3594,6 +3599,10 @@ snapshots:
 
   git-hooks-list@3.2.0: {}
 
+  git-remote-origin-url@4.0.0:
+    dependencies:
+      gitconfiglocal: 2.1.0
+
   git-up@8.0.1:
     dependencies:
       is-ssh: 1.4.1
@@ -3602,6 +3611,10 @@ snapshots:
   git-url-parse@16.0.1:
     dependencies:
       git-up: 8.0.1
+
+  gitconfiglocal@2.1.0:
+    dependencies:
+      ini: 1.3.8
 
   github-default-labels@0.1.0: {}
 
@@ -3690,6 +3703,8 @@ snapshots:
   index-to-position@0.1.2: {}
 
   inherits@2.0.4: {}
+
+  ini@1.3.8: {}
 
   ini@4.1.1: {}
 
@@ -4455,9 +4470,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors@2.1.1: {}
-
-  zod-package-json@1.1.0:
-    dependencies:
-      zod: 3.24.2
 
   zod@3.24.2: {}
