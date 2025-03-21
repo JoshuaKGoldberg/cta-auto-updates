@@ -16,8 +16,10 @@ jobs:
       - run: git diff HEAD
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_author: "The Friendly Bingo Bot"
+          commit_author: "The Friendly Bingo Bot <bot@create.bingo>"
           commit_message: "Check in changes from re-running npx create-typescript-app"
+          commit_user_email: "bot@create.bingo"
+          commit_user_name: "The Friendly Bingo Bot"
 
 name: CTA Renovate
 
