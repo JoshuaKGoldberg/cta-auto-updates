@@ -1,0 +1,17 @@
+jobs:
+  transition_cta:
+    if: startsWith(github.head_ref, 'renovate/')
+    name: CTA Renovate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/prepare
+      - run: npx create-typescript-app
+      - uses: EndBug/add-and-commit@v9
+
+name: CTA Renovate
+
+on:
+  pull_request:
+    branches:
+      - main
