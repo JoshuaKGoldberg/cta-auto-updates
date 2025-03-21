@@ -1,5 +1,6 @@
 jobs:
   prettier:
+    if: startsWith(github.head_ref, 'releases/')
     name: Prettier
     runs-on: ubuntu-latest
     steps:
