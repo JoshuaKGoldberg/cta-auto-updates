@@ -1,4 +1,4 @@
-<h1>Cta Auto Updates</h1>
+<h1 align="center">Cta Auto Updates</h1>
 
 <p align="center">Testing GHA.</p>
 

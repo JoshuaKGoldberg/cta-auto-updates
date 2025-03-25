@@ -10,28 +10,10 @@
 		"pnpm-lock.yaml"
 	],
 	"words": [
-		"💖",
-		"10.4.0",
-		"access",
-		"add-cta-transitions",
 		"apexskier",
 		"automerge",
-		"Cta",
-		"cta-auto-updates",
-		"description",
-		"directory",
-		"emoji",
-		"everything",
 		"joshuakgoldberg",
 		"markdownlintignore",
-		"packageData",
-		"pnpm",
-		"preset",
-		"public",
-		"repository",
-		"Testing",
-		"title",
-		"tseslint",
-		"usage"
+		"tseslint"
 	]
 }
